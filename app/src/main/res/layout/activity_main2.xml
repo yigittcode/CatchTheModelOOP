@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:text="Pick Your Hero"
+        android:textColor="#100A0A"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/kataraimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/aangimg"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="pickAang"
+        app:layout_constraintBottom_toBottomOf="@+id/kataraimg"
+        app:layout_constraintEnd_toStartOf="@+id/kataraimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/aang" />
+
+    <ImageView
+        android:id="@+id/tophimg"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="155dp"
+        android:onClick="pickToph"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zukoimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kataraimg"
+        app:srcCompat="@drawable/toph" />
+
+    <ImageView
+        android:id="@+id/zukoimg"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="91dp"
+        android:onClick="pickZuko"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tophimg"
+        app:srcCompat="@drawable/zuko" />
+
+    <ImageView
+        android:id="@+id/kataraimg"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="55dp"
+        android:onClick="pickKatara"
+        app:layout_constraintBottom_toTopOf="@+id/tophimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aangimg"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/katara" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
